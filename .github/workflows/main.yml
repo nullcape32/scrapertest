@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -128,4 +128,4 @@ jobs:
           git config user.email "actions@github.com"
           git add channels.json
           git commit -m "Update channels list" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/nullcape32/scrapertest.git
+          git push
