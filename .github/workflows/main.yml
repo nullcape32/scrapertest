@@ -33,7 +33,7 @@ jobs:
           puppeteer.use(StealthPlugin());
 
           const urls = [
-            'https://smotret-tv.live/mezzo.html'
+            'https://smotret-tv.live/mezzo-live-hd.html'
           ];
 
           const delay = ms => new Promise(res => setTimeout(res, ms));
